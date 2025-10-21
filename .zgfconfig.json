@@ -1,0 +1,14 @@
+{
+  "packageManager": "yarn",
+  "components.zgf": {
+    "path": "./components"
+  },
+  "alias": {
+    "@shared": "./src/shared/ui/",
+    "@entities": "./src/entities/",
+    "@features": "./src/features/",
+    "@widgets": "./src/widgets/",
+    "@pages": "./src/pages/",
+    "@app": "./src/app/"
+  }
+}

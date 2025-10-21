@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  ebank-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL}
+        VITE_DEFAULT_CACHE_TTL: ${VITE_DEFAULT_CACHE_TTL}
+        VITE_DEFAULT_TIMEOUT: ${VITE_DEFAULT_TIMEOUT}
+    ports:
+      - '3000:80'
+    environment:
+      - NODE_ENV=production
+      - VITE_API_URL=${VITE_API_URL}
+      - VITE_DEFAULT_CACHE_TTL=${VITE_DEFAULT_CACHE_TTL}
+      - VITE_DEFAULT_TIMEOUT=${VITE_DEFAULT_TIMEOUT}
+    restart: unless-stopped
+    container_name: ebank-frontend
+
+  # Для разработки с hot-reload
+  ebank-dev:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - '5173:5173'
+    command: sh -c "yarn install && yarn dev --host"
+    environment:
+      - NODE_ENV=development
+      - VITE_API_URL=${VITE_API_URL}
+      - VITE_DEFAULT_CACHE_TTL=${VITE_DEFAULT_CACHE_TTL}
+      - VITE_DEFAULT_TIMEOUT=${VITE_DEFAULT_TIMEOUT}
+    container_name: ebank-dev

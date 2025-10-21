@@ -1,0 +1,12 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-recommended-scss"],
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "color-hex-length": "short",
+    "unit-allowed-list": ["em", "rem", "s", "px", "%", "deg", "vh", "vw", "ms", "fr"],
+    "declaration-empty-line-before": "never",
+    "at-rule-empty-line-before": "always",
+    "selector-class-pattern": "",
+    "no-descending-specificity": null
+  }
+}

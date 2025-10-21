@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Основная кодировка -->
+    <meta charset="UTF-8" />
+
+    <!-- Респонсив дизайн -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO: заголовок и описание -->
+    <title>EBank — Онлайн-банк для удобного управления финансами</title>
+    <meta
+      name="description"
+      content="EBank — безопасный и удобный онлайн-банк для управления вашими счетами, переводами и инвестициями."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Подключение шрифтов (оптимизация) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- Оптимизация для мобильных устройств и соцсетей -->
+    <meta property="og:title" content="EBank — Онлайн-банк" />
+    <meta property="og:description" content="Управляйте своими финансами удобно и безопасно с EBank." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:url" content="https://ebank.example.com" />
+
+    <!-- Минимизация FOUC при использовании Tailwind -->
+    <style>
+      body {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" role="main"></div>
+
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Включение видимости после загрузки -->
+    <script>
+      document.body.style.visibility = 'visible';
+    </script>
+  </body>
+</html>

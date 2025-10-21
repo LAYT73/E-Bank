@@ -1,0 +1,58 @@
+:root {
+  // Fonts
+  --font-main: 'Inter', sans-serif;
+  --font-size-xl: 30px;
+  --font-size-lg: 18px;
+  --font-size-md: 16px;
+  --font-size-sm: 14px;
+  --font-size-xs: 12px;
+
+  --line-height-dense: 1.2; /* Для заголовков */
+  --line-height-normal: 1.5; /* Базовая для текста */
+  --line-height-loose: 1.7; /* Для мелкого текста */
+
+  --font-weight-bold: 700; /* Жирный (заголовки, акценты) */
+  --font-weight-semibold: 600; /* Полужирный (подзаголовки) */
+  --font-weight-regular: 400; /* Обычный (основной текст) */
+
+  // Colors
+
+  // Gradients
+
+  // Layout container
+  --container-max-width: 1200px;
+  --container-min-height: 100vh;
+  --container-padding: var(--padding-size-xs);
+
+  // Sizes
+  --border-weight: 1px;
+
+  --border-radius-xs: 4px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+
+  --padding-size-xs: 12px;
+  --padding-size-sm: 16px;
+  --padding-size-md: 20px;
+  --padding-size-lg: 24px;
+  --padding-size-xl: 32px;
+
+  --margin-size-xs: 12px;
+  --margin-size-sm: 16px;
+  --margin-size-md: 20px;
+  --margin-size-lg: 24px;
+  --margin-size-xl: 32px;
+
+  --gap-size-xs: 4px;
+  --gap-size-sm: 8px;
+  --gap-size-md: 12px;
+  --gap-size-lg: 16px;
+  --gap-size-xl: 20px;
+  --gap-size-2xl: 24px;
+}
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1440px;
