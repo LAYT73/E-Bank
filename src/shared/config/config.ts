@@ -6,8 +6,8 @@ import { getRawEnv } from './env';
 
 const EnvSchema = z.object({
   VITE_API_URL: z.url(),
-  VITE_DEFAULT_CACHE_TTL: z.number().min(0),
-  VITE_DEFAULT_TIMEOUT: z.number().min(0),
+  VITE_DEFAULT_CACHE_TTL: z.number().min(0).default(60000),
+  VITE_DEFAULT_TIMEOUT: z.number().min(0).default(10000),
 });
 
 type Env = z.infer<typeof EnvSchema>;

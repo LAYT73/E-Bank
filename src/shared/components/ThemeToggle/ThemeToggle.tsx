@@ -14,7 +14,7 @@ export const ThemeToggle = () => {
   };
 
   return (
-    <Button variant="outline" onClick={handleToggle}>
+    <Button aria-activedescendant="" aria-pressed={dark} variant="outline" onClick={handleToggle}>
       {dark ? '🌙 Dark' : '☀️ Light'}
     </Button>
   );

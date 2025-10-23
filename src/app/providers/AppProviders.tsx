@@ -12,10 +12,10 @@ interface AppProvidersProps {
 
 export const AppProviders = ({ children }: AppProvidersProps) => {
   return (
-    <DIProvider>
-      <Provider store={store}>
-        <ErrorBoundary>{children}</ErrorBoundary>
-      </Provider>
-    </DIProvider>
+    <ErrorBoundary>
+      <DIProvider>
+        <Provider store={store}>{children}</Provider>
+      </DIProvider>
+    </ErrorBoundary>
   );
 };

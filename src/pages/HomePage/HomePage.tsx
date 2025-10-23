@@ -2,6 +2,7 @@ import './HomePage.module.scss';
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import { API_ENDPOINTS } from '@/shared/api/endpoints';
 import { ThemeToggle } from '@/shared/components';
 import { useDI } from '@/shared/di/di-container';
 import { useTryCatch } from '@/shared/hooks/useTryCatch';
@@ -16,7 +17,7 @@ interface IUser {
 const HomePage: React.FC<IHomePageProps> = () => {
   const { httpClient } = useDI();
   const { data, error, loading, execute } = useTryCatch<IUser[]>(() =>
-    httpClient.get<IUser[]>('/todos', {
+    httpClient.get<IUser[]>(API_ENDPOINTS.todos.list(), {
       cache: {
         enabled: true,
         strategy: 'cache-first',

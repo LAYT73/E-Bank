@@ -39,8 +39,7 @@ export default defineConfig({
             return content;
           }
 
-          return content;
-          // return `@use "/src/app/styles/variables.scss" as *;\n${content}`;
+          return `@use "/src/app/styles/variables.scss" as *;\n${content}`;
         },
       },
     },

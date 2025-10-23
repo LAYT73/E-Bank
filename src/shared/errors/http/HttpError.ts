@@ -1,16 +1,7 @@
 import { AxiosError } from 'axios';
 
 import { type HttpStatusType } from '@/shared/api/http-status';
-
-export const EHttpError = {
-  NETWORK: 'NETWORK',
-  TIMEOUT: 'TIMEOUT',
-  SERVER: 'SERVER',
-  CLIENT: 'CLIENT',
-  UNKNOWN: 'UNKNOWN',
-} as const;
-
-export type HttpErrorType = (typeof EHttpError)[keyof typeof EHttpError];
+import { EHttpError, type HttpErrorType } from '@/shared/errors/http/HttpError.types';
 
 export class HttpError extends Error {
   public readonly type: HttpErrorType;

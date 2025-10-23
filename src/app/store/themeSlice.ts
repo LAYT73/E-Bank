@@ -5,7 +5,7 @@ interface ThemeState {
 }
 
 const initialState: ThemeState = {
-  dark: document.documentElement.classList.contains('dark'),
+  dark: typeof document !== 'undefined' && document.documentElement.classList.contains('dark'),
 };
 
 const themeSlice = createSlice({
