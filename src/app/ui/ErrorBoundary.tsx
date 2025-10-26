@@ -34,7 +34,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
       return (
         <div style={{ padding: 20, textAlign: 'center' }}>
           <h2>Что-то пошло не так 😞</h2>
-          {import.meta.env.DEV === 'development' && (
+          {import.meta.env.DEV && (
             <details style={{ whiteSpace: 'pre-wrap' }}>
               {this.state.error?.toString()}
               <br />

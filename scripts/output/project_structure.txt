@@ -1,0 +1,138 @@
+/Users/macbook/Desktop/Study/EBank/ebank-frontend
+├── .DS_Store
+├── .dockerignore
+├── .editorconfig
+├── .env
+├── .gitignore
+├── .prettierrc.json
+├── .stylelintrc.json
+├── .zgfconfig.json
+├── Dockerfile
+├── README.md
+├── components
+│   ├── base.zgf.yaml
+│   └── child.zgf.yaml
+├── components.json
+├── docker-compose.yml
+├── eslint.config.js
+├── index.html
+├── jest.config.js
+├── nginx.conf
+├── package.json
+├── postcss.config.mjs
+├── public
+│   └── vite.svg
+├── scripts
+│   ├── bundle_report.py
+│   ├── output
+│   │   ├── bundle_report.txt
+│   │   └── project_structure.txt
+│   └── project_structure.py
+├── src
+│   ├── app
+│   │   ├── index.tsx
+│   │   ├── providers
+│   │   │   ├── AppProviders.tsx
+│   │   │   └── router
+│   │   │       ├── AppRouter.tsx
+│   │   │       ├── PrivateRoute.tsx
+│   │   │       └── routeConfig.tsx
+│   │   ├── store
+│   │   │   ├── store.ts
+│   │   │   └── themeSlice.ts
+│   │   ├── styles
+│   │   │   ├── animations.scss
+│   │   │   ├── fonts.scss
+│   │   │   ├── index.scss
+│   │   │   ├── tailwind.css
+│   │   │   └── variables.scss
+│   │   └── ui
+│   │       └── ErrorBoundary.tsx
+│   ├── entities
+│   │   └── .gitkeep
+│   ├── features
+│   │   └── .gitkeep
+│   ├── main.tsx
+│   ├── pages
+│   │   ├── HomePage
+│   │   │   ├── HomePage.module.scss
+│   │   │   ├── HomePage.tsx
+│   │   │   └── index.ts
+│   │   ├── LoadingPage
+│   │   │   ├── LoadingPage.module.scss
+│   │   │   ├── LoadingPage.tsx
+│   │   │   └── index.ts
+│   │   ├── NotFoundPage
+│   │   │   ├── NotFoundPage.module.scss
+│   │   │   ├── NotFoundPage.tsx
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   ├── setupTests.ts
+│   ├── shared
+│   │   ├── api
+│   │   │   ├── __tests__
+│   │   │   │   └── http-client.spec.ts
+│   │   │   ├── axios-factory.ts
+│   │   │   ├── endpoints.ts
+│   │   │   ├── http-cache.ts
+│   │   │   ├── http-client.ts
+│   │   │   ├── http-status.ts
+│   │   │   └── http-types.ts
+│   │   ├── assets
+│   │   │   └── .gitkeep
+│   │   ├── components
+│   │   │   ├── ThemeToggle
+│   │   │   │   ├── ThemeToggle.tsx
+│   │   │   │   └── index.ts
+│   │   │   └── index.ts
+│   │   ├── config
+│   │   │   ├── config.ts
+│   │   │   ├── env.ts
+│   │   │   └── routes.ts
+│   │   ├── di
+│   │   │   └── di-container.tsx
+│   │   ├── errors
+│   │   │   ├── ConfigError.ts
+│   │   │   ├── ValidationError.ts
+│   │   │   ├── http
+│   │   │   │   ├── HttpError.ts
+│   │   │   │   ├── HttpError.types.ts
+│   │   │   │   └── index.ts
+│   │   │   └── index.ts
+│   │   ├── hooks
+│   │   │   ├── redux.ts
+│   │   │   ├── useDebounce.ts
+│   │   │   ├── useInViewAnimation.ts
+│   │   │   ├── useInitTheme.ts
+│   │   │   ├── useLocalStorage.ts
+│   │   │   └── useTryCatch.ts
+│   │   ├── lib
+│   │   │   ├── jsHelpers
+│   │   │   │   └── index.ts
+│   │   │   ├── logger
+│   │   │   │   ├── ConsoleLogger.ts
+│   │   │   │   ├── ILogger.ts
+│   │   │   │   └── index.ts
+│   │   │   └── utils
+│   │   │       ├── cn.ts
+│   │   │       ├── date.ts
+│   │   │       └── index.ts
+│   │   ├── shadcn
+│   │   │   └── ui
+│   │   │       ├── button.tsx
+│   │   │       └── spinner.tsx
+│   │   └── ui
+│   │       └── Input
+│   │           ├── Input.module.scss
+│   │           ├── Input.tsx
+│   │           └── index.ts
+│   ├── vite-env.d.ts
+│   └── widgets
+│       └── .gitkeep
+├── stats.html
+├── tailwind.config.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── yarn.lock

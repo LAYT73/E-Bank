@@ -1,0 +1,13 @@
+dist/offline.html: 1.87 KB
+dist/index.html: 0.74 KB
+dist/vite.svg: 1.46 KB
+Total size: 4.06 KB
+dist/assets/react-Dfoqj1Wf.js: 11.41 KB
+dist/assets/router-DgX7vS-h.js: 31.11 KB
+dist/assets/ui-B3z6dIw8.js: 76.78 KB
+dist/assets/index-Bse13qbs.js: 2.01 KB
+dist/assets/state-B8nTyF35.js: 23.29 KB
+dist/assets/index-Da4YZjqo.js: 181.78 KB
+dist/assets/index-DLfzvYte.css: 33.33 KB
+dist/assets/utils-l0sNRNKZ.js: 0.00 KB
+Total size: 363.78 KB
